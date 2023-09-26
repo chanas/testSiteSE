@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
+        <!-- lg = large breakpoint, navbar-light = make text dark, headerBG = custom css BG color -->
+        <div class="container"> <!-- Container will contain content in certain space in middle of page -->
+            <a href="#" class="navbar-brand">
+                <img src="/img/droplet.png" alt="Water Logo" class="d-inline-block align-text-top w-50">
+            </a>
+
+            <!-- Hamburger Menu Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible navbar menu with custom hover underline CSS animation -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- Links to hamburger menu button -->
+                <ul class="navbar-nav ms-auto">  <!-- ms-auto provides auto margin spacing-->
+                    <li class="nav-item">
+                        <a href="/authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="showcase text-light p-2 text-center">
+        <!-- headerBG = custom css BG color, p-2 = padding 2-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 p-0 d-flex align-items-center">
+                    <!-- img-fluid = won't expand image larger than container and will scale down if browser gets narrower than image set width-->
+                    <img class="img-fluid" src="img/IMG-5509.jpg" alt="Shark River"> <!-- w-50 = width 50%-->
+                </div>
+                <div class="col-sm-6 p-0 d-flex align-items-center">
+                    <div class="container">
+                        <h1 class="display-4">Water Temperatures Near Avon, NJ (2021-2022)</h1> <!-- display-4 = makes h1 stand out-->
+                        <h2>Building a Site with Bootstrap Demo</h2>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Overview -->
+    <section class="overview text-dark p-2 text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 p-3">
+                    <!-- pt-3 = padding top 3-->
+                    <img class="img-fluid" src="/img/19418.jpeg" alt="Water Temperature Graph">
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadLeft">Background</h1> <!-- ovPadLeft = custom padding left side -->
+                    <p class="lead overview-font ovPadLeft" id="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 p-3">
+                    <h1>Rationale</h1> <!-- ovPadLeft = custom padding left side -->
+                    <p class="lead overview-font ovPadRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-sm-4 p-3">
+                    <!-- pt-3 = padding top 3-->
+                    <img class="img-fluid" src="/img/watermap.jpg" alt="Water Temperature Graph"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 p-3">
+                    <!-- pt-3 = padding top 3-->
+                    <img class="img-fluid" src="/img/phytoplankton_pnas.jpg" alt="Water Temperature Graph"> 
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadLeft">Research Practicum</h1> <!-- ovPadLeft = custom padding left side -->
+                    <p class="lead overview-font ovPadLeft" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> 
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Footer (requires BS icons CSS)-->
+    <footer class="p-5 footer text-light text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; SE 2023 Bootstrap Demo</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
