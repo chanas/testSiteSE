@@ -1,7 +1,7 @@
 
 async function getData(){
-      //const response = await fetch('/testSiteSE/data/avonJulyWaterTemps.csv');  // data directory for GitHub pages
-      const response = await fetch('../data/avonJulyWaterTemps.csv');  //     // data directory for local dev (LiveServer)
+      const response = await fetch('/testSiteSE/data/avonJulyWaterTemps.csv');  // data directory for GitHub pages
+      //const response = await fetch('../data/avonJulyWaterTemps.csv');  //     // data directory for local dev (LiveServer)
       
       const data = await response.text();      //CSV in TEXT format
       //console.log(data);
