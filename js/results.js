@@ -1,6 +1,8 @@
 
 async function getData(){
-      const response = await fetch('/testSiteSE/data/avonJulyWaterTemps.csv');  // .. to move up one folder
+      //const response = await fetch('/testSiteSE/data/avonJulyWaterTemps.csv');  // data directory for GitHub pages
+      const response = await fetch('../data/avonJulyWaterTemps.csv');  //     // data directory for local dev (LiveServer)
+      
       const data = await response.text();      //CSV in TEXT format
       //console.log(data);
 
@@ -56,40 +58,41 @@ async function createChart(){
         },
         options: {
             responsive: true,           // Re-size based on screen size
+            maintainAspectRatio: false,
             scales: {                   // Display options for x & y axes
                 x: {
                     title: {
                         display: true,
                         text: 'Day',   // x-axis title
                         font: {         // font properties
-                            size: 20
+                            size: 16
                         },
                     },
                     ticks: {
                         callback: function(val, index) {
                             // The labeling of tick marks can be controlled by code and font size
-                            return index % 5 === 0 ? this.getLabelForValue(val) : '';
+                            return index % 2 === 0 ? this.getLabelForValue(val) : '';
                         },
                         font: {
-                            size: 16  
-                        }
+                            size: 12  
+                        },
                     },
                     grid: {
                         color: '#6c767e'
                     }
                 },
                 y: {
-                    min: 0,
-                    max: 80,
+                    //min: 0,
+                    //max: 80,
                     title: {
                         display: true,                          
-                        text: 'Avon Water Temperatures (°C)',
+                        text: 'Water Temperature (°C)',
                         font: {
-                            size: 20
+                            size: 16
                         },
                     },
                     ticks: {
-                        /*maxTicksLimit: data.temps2021.length,   // limit # of tickmarks*/
+                        maxTicksLimit: data.temps2021.length,   // limit # of tickmarks*/
                         font: {
                             size: 12
                         }
