@@ -59,8 +59,12 @@
 
 #chart-wrapper{
     margin: auto; 
+    padding: 10px;
     height: 40vh;
+    min-height: 350px;
     width:  80vw;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -----------------Underline Animation CSS -----------------*/
